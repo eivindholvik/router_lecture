@@ -24,6 +24,16 @@ function Header() {
               About
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/signup" style={setActive}>
+              Sign Up
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/hooksignup" style={setActive}>
+              Hook Sign Up
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

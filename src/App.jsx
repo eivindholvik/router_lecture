@@ -6,6 +6,8 @@ import Products from "./pages/Products";
 import SharedLayout from "./pages/SharedLayout";
 import Error from "./pages/Error";
 import Product from "./pages/Product";
+import SignUp from "./pages/SignUp";
+import SignUpHook from "./pages/SignUpHook";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
+          <Route path="signup" element={<SignUp />} />
+          <Route path="hooksignup" element={<SignUpHook />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
           <Route path="product/:id" element={<Product />} />
